@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ojos azul Template</title>
+    <meta content="" name="Ojos azul"/>
+    <meta name="description" content="Ojos azul - powerful & flexible theme"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="powerful & flexible theme" />
+    <meta property="og:description" content="Ojos azul - powerful & flexible theme" />
+    <meta property="og:url" content="http://stekolschikov.info/" />
+    <meta property="og:site_name" content="stekolschikov" />
+    <link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
+    <style>
+	    body, html{
+	    	font-family: 'Homenaje', sans-serif;
+	    	color: #545353;
+		}
+		h1{
+			padding: 0px;
+    		margin: 0px;
+		}
+	    #page-preloader{
+		    position:fixed;
+		    left:0;top:0;
+		    right:0;
+		    bottom:0;
+		    background: #191E25;
+		    z-index:100500
+		}
+		#page-preloader .spinner{
+		    width:150px;
+		    height:60px;
+		    position:absolute;
+		    margin-left:auto;
+		    margin-right:auto;
+		    left:0;
+		    right:0;
+		    top:45%;
+		}
+	</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+    $(window).on("load",function(){
+        var a=$("#page-preloader"),d=a.find(".spinner");
+        d.fadeOut(),a.delay(350).fadeOut("slow");
+    });
+	</script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<!--preloader-->
+
+<div id="page-preloader">
+    <span class="spinner">
+        <h1 class="bold-text">Ojos azul</h1>
+    </span>
+</div>
+
+<!--preloader-->
+
+<!-- navigation -->
+
+<nav>
+    <ul>
+        <li>
+            <h2>
+                <button class="home bold">
+                    HOME
+                </button>
+            </h2>
+        </li>
+        <li>
+            <h2>
+                <button class="about">
+                    ABOUT
+                </button>
+            </h2>
+        </li>
+        <li>
+            <h2>
+                <button class="portfolio">
+                    PORTFOLIO
+                </button>
+            </h2>
+        </li>
+        <li>
+            <h2>
+                <button class="price">
+                    PRICE
+                </button>
+            </h2>
+        </li>
+        <li>
+            <h2>
+                <button class="comments">
+                    COMMENTS
+                </button>
+            </h2>
+        </li>
+        <li>
+            <h2>
+                <button class="contacts">
+                    CONTACTS
+                </button>
+            </h2>
+        </li>
+    </ul>
+</nav>
+
+<!-- navigation -->
+
+<article>
+
+<!-- slider -->
+
+    <section data-anchor="home" class="section">
+        <div class="prev"><h1>></h1></div>
+        <div class="next"><h1><</h1></div>
+        <div class="container-slider">
+            <div class="slide-one"></div>
+            <div class="slide-two"></div>
+            <div class="slide-three">1</div>
+        </div>
+    </section>
+
+<!-- slider -->
+
+<!-- about section -->
+
+    <section data-anchor="about" class="section">
+        <div class="container">
+            <div class="col-md-12 title-page">
+                <h1>
+                    About
+                </h1>
+            </div>
+            <div class="col-md-4 visible-md visible-lg">
+                <img src="img/i.jpg" alt="">
+            </div>
+            <div class="col-md-8 col-sm-12">
+                <h2>
+                    <p>I am 27 years old. Currently I live in Ukraine, Lisichansk. I graduated from the East-Ukrainian National Dal’ University in Lugansk. I am experienced in various fields; particularly I am interested in in webprogramming and webdesigning.</p>
+                    <p>The most important thing that you should know about me is that I adore programming; high-tech and I cannot imagine my life without a professional growth.</p>
+                    <p>I am able to program and like programming in HTML, CSS, PHP, JS. I am keen on a coding and design creation as well.</p>
+                    <div class="col-md-12 visible-md visible-lg pay-inf">
+                        <i class="fa fa-git"></i>
+                        <i class="fa fa-bug"></i>
+                        <i class="fa fa-cloud"></i>
+                        <i class="fa fa-graduation-cap"></i>
+                        <i class="fa fa-css3"></i>
+                        <i class="fa fa-codepen"></i>
+                    </div>
+                </h2>
+            </div>
+        </div>
+    </section>
+
+<!-- about section -->
+
+<!-- portfolio section -->
+
+    <section data-anchor="portfolio" class="section">
+        <div class="container">
+            <div class="col-md-12 title-page">
+                <h1>
+                    Portfolio
+                </h1>
+            </div>
+        </div>
+
+            <div class="container">
+
+                <ul id="filter">
+                    <li><a class="active" href="#" data-group="all"><h2>All</h2></a></li>
+                    <li><a href="#" data-group="html"><h2>HTML</h2></a></li>
+                    <li><a href="#" data-group="css"><h2>CSS</h2></a></li>
+                    <li><a href="#" data-group="js"><h2>JS</h2></a></li>
+                    <li><a href="#" data-group="php"><h2>PHP</h2></a></li>
+                    <li><a href="#" data-group="cms"><h2>CMS</h2></a></li>
+                </ul>
+
+                <div id="grid">
+                    <div class="item"  data-groups='["all", "html", "css" ]'>
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/ico-sites/fleur.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <h2><a href="http://fleur-parfum.com/">Fleur Parfum</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"  data-groups='["all", "html", "css", "js" ]'>
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/ico-sites/english-tutor.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <h2><a href="http://english-tutor-ann.com/">English tutor</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"  data-groups='["all", "html", "css", "js", "php", "cms" ]'>
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/ico-sites/sflower.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <h2><a href="http://www.sflower.co.il/">Sflower</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"  data-groups='["all", "html", "css", "js", "php", "cms" ]'>
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/ico-sites/machsan.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <h2><a href="http://www.machsan.co.il/">Machsan</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"  data-groups='["all", "html", "css", "cms" ]'>
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/ico-sites/blinok.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <h2><a href="http://blinok.ua/">Blinok</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"  data-groups='["all", "html", "js", "php"]'>
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/ico-sites/makesold.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <h2><a href="http://makesold.com/templates/template/">Makesold</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"  data-groups='["all", "css", "cms"]'>
+                        <div class="flipper">
+                            <div class="front">
+                                <img src="img/ico-sites/timestyle.jpg" alt="">
+                            </div>
+                            <div class="back">
+                                <h2><a href="http://www.timestyle.com.ua/">Time style</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!-- portfolio section -->
+
+<!-- price section -->
+
+    <section data-anchor="price" class="section">
+        <div class="container">
+            <div class="col-md-12 title-page">
+                <h1>
+                    Price
+                </h1>
+            </div>
+            <div class="col-xs-4">
+                <div class="container-price">
+                    <div class="title-price">
+                        <h2>Lending</h2>
+                    </div>
+                    <div class="description-price">
+                        <h3>In the purest sense, a landing page is any web page that a visitor can arrive at or “land” on.</h3>
+                    </div>
+                    <div class="price">
+                        <h2>$ 100</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="container-price">
+                    <div class="title-price">
+                        <h2>Shop</h2>
+                    </div>
+                    <div class="description-price">
+                        <h3>Form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser. </h3>
+                    </div>
+                    <div class="price">
+                        <h2>$ 200</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="container-price">
+                    <div class="title-price">
+                        <h2>Blog</h2>
+                    </div>
+                    <div class="description-price">
+                        <h3>Discussion or informational site published on the WWW consisting of discrete entries typically displayed in reverse chronological order.</h3>
+                    </div>
+                    <div class="price">
+                        <h2>$ 150</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- price section -->
+
+<!-- comments section -->
+
+    <section data-anchor="comments" class="section">
+        <div class="container">
+            <div class="col-md-12 title-page">
+                <h1>
+                    Comments
+                </h1>
+            </div>
+            <div class="all-comments">
+                <div class="col-xs-6 col-md-6 container-comment">
+                    <div class="comment-text">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum  adipisicing elit.</h2>
+                    </div>
+                    <div class="comment-autor">
+                        <h3>一 Lisa A.</h3>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-6 container-comment">
+                    <div class="comment-text">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum  adipisicing elit.</h2>
+                    </div>
+                    <div class="comment-autor">
+                        <h3>一 Lisa A.</h3>
+                    </div>
+                </div>
+      
+                <div class="col-xs-6 col-md-6 container-comment">
+                    <div class="comment-text">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum  adipisicing elit.</h2>
+                    </div>
+                    <div class="comment-autor">
+                        <h3>一 Lisa A.</h3>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-6 container-comment">
+                    <div class="comment-text">
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum  adipisicing elit.</h2>
+                    </div>
+                    <div class="comment-autor">
+                        <h3>一 Lisa A.</h3>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- comments section -->
+
+<!-- contacts section -->
+
+    <section data-anchor="contacts" class="section">
+        <div class="container">
+            <div class="col-md-12 title-page">
+                <h1>
+                    Contacts
+                </h1>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <form>
+                    <p><input id="name" type="text" placeholder="Name" required></p>
+                    <p><input id="email"  type="email" placeholder="Email" required></p>
+                    <p><textarea id="message" cols="30" rows="6" placeholder="Message" required></textarea></p>
+                    <p><h3><input type="button" value="Send" class="button"></h3></p>
+                </form>
+            </div>
+            <div class="col-md-8 col-sm-6 visible-sm visible-md visible-lg container-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83927.97592105027!2d38.34708295962046!3d48.90111579364173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41200ff1a84cd0c5%3A0x4dcad050a5b70faa!2z0JvQuNGB0LjRh9Cw0L3RgdC6LCDQm9GD0LPQsNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDkzMTAw!5e0!3m2!1sru!2sua!4v1455659102834" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+<!-- contacts section -->
+
+</article>
+    <link rel="stylesheet" href="lib/fullPage/jquery.fullPage.css">
+    <script src="lib/fullPage/jquery.easings.min.js"></script>
+    <script src="lib/fullPage/jquery.slimscroll.min.js"></script>
+    <script src="lib/fullPage/jquery.fullPage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script src="lib/Shuffle/jquery.shuffle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script/script.js"></script>
+
+</body>
+</html>
